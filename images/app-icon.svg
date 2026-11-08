@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Own placeholder icon of the remake (GR-M3): a dart over a receding grid.
+     Nothing of the original's logo or artwork is used. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <rect width="1024" height="1024" rx="180" fill="#0b2a4a"/>
+  <g stroke="#1e6fa8" stroke-width="10" fill="none" opacity="0.8">
+    <line x1="512" y1="430" x2="60" y2="1024"/>
+    <line x1="512" y1="430" x2="300" y2="1024"/>
+    <line x1="512" y1="430" x2="512" y2="1024"/>
+    <line x1="512" y1="430" x2="724" y2="1024"/>
+    <line x1="512" y1="430" x2="964" y2="1024"/>
+    <line x1="0" y1="600" x2="1024" y2="600"/>
+    <line x1="0" y1="720" x2="1024" y2="720"/>
+    <line x1="0" y1="880" x2="1024" y2="880"/>
+  </g>
+  <rect x="700" y="470" width="110" height="110" fill="#e0524a"/>
+  <rect x="230" y="520" width="150" height="150" fill="#f2b632"/>
+  <polygon points="512,560 400,860 512,800 624,860" fill="#f4f7fb"/>
+  <polygon points="512,560 512,800 624,860" fill="#c9d3e0"/>
+</svg>

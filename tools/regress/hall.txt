@@ -1,0 +1,101 @@
+{"kind":"scene","id":"SceneEntity","x":0,"y":0,"width":640,"height":360}
+{"camera":{"type":"perspective","fov":35,"near":0.3,"far":1000,"position":[0,10.5,-20],"target":[0,1.784,79.619],"up":[0,0.996,0.087]}}
+{"light":{"type":"directional","direction":[-0.677,-0.65,-0.345],"color":"#ffffff","intensity":15}}
+{"light":{"type":"ambient","color":"#ffffff","intensity":11}}
+{"background":"#018b85"}
+{"fog":{"start":400,"end":1000,"color":"#018b85"}}
+{"type":"mesh","mesh":"ground","vertices":4,"triangles":2,"shading":"flat","wireframe":false,"transform":{"position":[0,0,500],"scale":[1500,1,1400]},"color":"#882d2d","fill":"#882d2d","strokeWidth":1,"intensity":15,"opacity":1}
+{"type":"line","x1":-750,"y1":0.05,"z1":-200,"x2":-750,"y2":0.05,"z2":1200,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":-650,"y1":0.05,"z1":-200,"x2":-650,"y2":0.05,"z2":1200,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":-550,"y1":0.05,"z1":-200,"x2":-550,"y2":0.05,"z2":1200,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":-450,"y1":0.05,"z1":-200,"x2":-450,"y2":0.05,"z2":1200,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":-350,"y1":0.05,"z1":-200,"x2":-350,"y2":0.05,"z2":1200,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":-250,"y1":0.05,"z1":-200,"x2":-250,"y2":0.05,"z2":1200,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":-150,"y1":0.05,"z1":-200,"x2":-150,"y2":0.05,"z2":1200,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":-50,"y1":0.05,"z1":-200,"x2":-50,"y2":0.05,"z2":1200,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":50,"y1":0.05,"z1":-200,"x2":50,"y2":0.05,"z2":1200,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":150,"y1":0.05,"z1":-200,"x2":150,"y2":0.05,"z2":1200,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":250,"y1":0.05,"z1":-200,"x2":250,"y2":0.05,"z2":1200,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":350,"y1":0.05,"z1":-200,"x2":350,"y2":0.05,"z2":1200,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":450,"y1":0.05,"z1":-200,"x2":450,"y2":0.05,"z2":1200,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":550,"y1":0.05,"z1":-200,"x2":550,"y2":0.05,"z2":1200,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":650,"y1":0.05,"z1":-200,"x2":650,"y2":0.05,"z2":1200,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":750,"y1":0.05,"z1":-200,"x2":750,"y2":0.05,"z2":1200,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":-750,"y1":0.05,"z1":-200,"x2":750,"y2":0.05,"z2":-200,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":-750,"y1":0.05,"z1":-100,"x2":750,"y2":0.05,"z2":-100,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":-750,"y1":0.05,"z1":0,"x2":750,"y2":0.05,"z2":0,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":-750,"y1":0.05,"z1":100,"x2":750,"y2":0.05,"z2":100,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":-750,"y1":0.05,"z1":200,"x2":750,"y2":0.05,"z2":200,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":-750,"y1":0.05,"z1":300,"x2":750,"y2":0.05,"z2":300,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":-750,"y1":0.05,"z1":400,"x2":750,"y2":0.05,"z2":400,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":-750,"y1":0.05,"z1":500,"x2":750,"y2":0.05,"z2":500,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":-750,"y1":0.05,"z1":600,"x2":750,"y2":0.05,"z2":600,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":-750,"y1":0.05,"z1":700,"x2":750,"y2":0.05,"z2":700,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":-750,"y1":0.05,"z1":800,"x2":750,"y2":0.05,"z2":800,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":-750,"y1":0.05,"z1":900,"x2":750,"y2":0.05,"z2":900,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":-750,"y1":0.05,"z1":1000,"x2":750,"y2":0.05,"z2":1000,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":-750,"y1":0.05,"z1":1100,"x2":750,"y2":0.05,"z2":1100,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":-750,"y1":0.05,"z1":1200,"x2":750,"y2":0.05,"z2":1200,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"mesh","mesh":"ship:wedge","vertices":2466,"triangles":1492,"shading":"none","wireframe":false,"transform":[1,0,0,0,-1.042,0,-0.531,0,0,0,1,0,-4.01,0.15,9.957,1],"color":"#161d2d","fill":"#161d2d","strokeWidth":1,"intensity":15,"opacity":0.4}
+{"type":"mesh","mesh":"ship:wedge","vertices":2466,"triangles":1492,"shading":"flat","wireframe":false,"transform":{"position":[0,6,0],"rotation":[0,0,0]},"color":"#d8d81e","fill":"none","strokeWidth":1,"intensity":15,"opacity":1}
+{"kind":"raster","id":"TextEntity","text":"GEOMETRY RACE","x":0,"y":28,"width":640,"height":24}
+{"kind":"rect","x":200,"y":80,"width":240,"height":12,"color":"#2c5aa0"}
+{"kind":"raster","id":"TextEntity","text":"START GAME","x":200,"y":80,"width":240,"height":12}
+{"kind":"raster","id":"SlidingTextEntity","text":"","x":343,"y":80,"width":97,"height":12}
+{"kind":"raster","id":"TextEntity","text":"PLAYER NAME","x":200,"y":94,"width":240,"height":12}
+{"kind":"raster","id":"SlidingTextEntity","text":"PLAYER","x":343,"y":94,"width":97,"height":12}
+{"kind":"raster","id":"TextEntity","text":"HALL OF FAME","x":200,"y":108,"width":240,"height":12}
+{"kind":"raster","id":"SlidingTextEntity","text":"","x":343,"y":108,"width":97,"height":12}
+{"kind":"raster","id":"TextEntity","text":"SHIPS","x":200,"y":122,"width":240,"height":12}
+{"kind":"raster","id":"SlidingTextEntity","text":"WEDGE","x":343,"y":122,"width":97,"height":12}
+{"kind":"raster","id":"TextEntity","text":"WORLDS","x":200,"y":136,"width":240,"height":12}
+{"kind":"raster","id":"SlidingTextEntity","text":"GRID","x":343,"y":136,"width":97,"height":12}
+{"kind":"raster","id":"TextEntity","text":"SOUNDS","x":200,"y":150,"width":240,"height":12}
+{"kind":"raster","id":"SlidingTextEntity","text":"NONE","x":343,"y":150,"width":97,"height":12}
+{"kind":"raster","id":"TextEntity","text":"MUSIC","x":200,"y":164,"width":240,"height":12}
+{"kind":"raster","id":"SlidingTextEntity","text":"NONE","x":343,"y":164,"width":97,"height":12}
+{"kind":"raster","id":"TextEntity","text":"SETTINGS","x":200,"y":178,"width":240,"height":12}
+{"kind":"raster","id":"SlidingTextEntity","text":"","x":343,"y":178,"width":97,"height":12}
+{"kind":"raster","id":"TextEntity","text":"ABOUT GAME","x":200,"y":192,"width":240,"height":12}
+{"kind":"raster","id":"SlidingTextEntity","text":"","x":343,"y":192,"width":97,"height":12}
+{"kind":"raster","id":"ButtonEntity","text":"V0000.00.00","x":512,"y":344,"width":120,"height":8}
+{"kind":"raster","id":"TextEntity","text":"© 2026 L. MITRENGA, CC BY-NC-SA 4.0","x":8,"y":344,"width":300,"height":8}
+{"kind":"raster","id":"TextEntity","text":"700 COINS","x":200,"y":212,"width":240,"height":8}
+{"kind":"rect","x":120,"y":75,"width":400,"height":210,"color":"#8fb3e6"}
+{"kind":"raster","id":"TextEntity","text":"HALL OF FAME","x":120,"y":75,"width":400,"height":9}
+{"kind":"rect","x":121,"y":84,"width":398,"height":200,"color":"#16243d"}
+{"kind":"raster","id":"TextEntity","text":"THE TEN LONGEST RUNS","x":127,"y":89,"width":386,"height":8}
+{"kind":"raster","id":"TextEntity","text":"","x":127,"y":176,"width":386,"height":16}
+{"kind":"raster","id":"TextEntity","text":"ENTER OR ESC CLOSES","x":127,"y":275,"width":336,"height":8}
+{"kind":"rect","x":467,"y":269,"width":46,"height":13,"color":"#3d5482"}
+{"kind":"raster","id":"ButtonEntity","text":"CLOSE","x":467,"y":269,"width":46,"height":13}
+{"kind":"raster","id":"TextEntity","text":"1.","x":127,"y":104,"width":30,"height":8}
+{"kind":"raster","id":"TextEntity","text":"ACE","x":165,"y":104,"width":250,"height":8}
+{"kind":"raster","id":"TextEntity","text":"4321 M","x":423,"y":104,"width":90,"height":8}
+{"kind":"raster","id":"TextEntity","text":"2.","x":127,"y":116,"width":30,"height":8}
+{"kind":"raster","id":"TextEntity","text":"BRUNO","x":165,"y":116,"width":250,"height":8}
+{"kind":"raster","id":"TextEntity","text":"3980 M","x":423,"y":116,"width":90,"height":8}
+{"kind":"raster","id":"TextEntity","text":"3.","x":127,"y":128,"width":30,"height":8}
+{"kind":"raster","id":"TextEntity","text":"CLARA","x":165,"y":128,"width":250,"height":8}
+{"kind":"raster","id":"TextEntity","text":"3512 M","x":423,"y":128,"width":90,"height":8}
+{"kind":"raster","id":"TextEntity","text":"4.","x":127,"y":140,"width":30,"height":8}
+{"kind":"raster","id":"TextEntity","text":"DEE","x":165,"y":140,"width":250,"height":8}
+{"kind":"raster","id":"TextEntity","text":"2999 M","x":423,"y":140,"width":90,"height":8}
+{"kind":"raster","id":"TextEntity","text":"5.","x":127,"y":152,"width":30,"height":8}
+{"kind":"raster","id":"TextEntity","text":"ELI","x":165,"y":152,"width":250,"height":8}
+{"kind":"raster","id":"TextEntity","text":"2500 M","x":423,"y":152,"width":90,"height":8}
+{"kind":"raster","id":"TextEntity","text":"6.","x":127,"y":164,"width":30,"height":8}
+{"kind":"raster","id":"TextEntity","text":"FAY","x":165,"y":164,"width":250,"height":8}
+{"kind":"raster","id":"TextEntity","text":"1750 M","x":423,"y":164,"width":90,"height":8}
+{"kind":"raster","id":"TextEntity","text":"7.","x":127,"y":176,"width":30,"height":8}
+{"kind":"raster","id":"TextEntity","text":"GUS","x":165,"y":176,"width":250,"height":8}
+{"kind":"raster","id":"TextEntity","text":"1200 M","x":423,"y":176,"width":90,"height":8}
+{"kind":"raster","id":"TextEntity","text":"8.","x":127,"y":188,"width":30,"height":8}
+{"kind":"raster","id":"TextEntity","text":"HAL","x":165,"y":188,"width":250,"height":8}
+{"kind":"raster","id":"TextEntity","text":"640 M","x":423,"y":188,"width":90,"height":8}
+{"kind":"raster","id":"TextEntity","text":"9.","x":127,"y":200,"width":30,"height":8}
+{"kind":"raster","id":"TextEntity","text":"IVY","x":165,"y":200,"width":250,"height":8}
+{"kind":"raster","id":"TextEntity","text":"300 M","x":423,"y":200,"width":90,"height":8}
+{"kind":"raster","id":"TextEntity","text":"10.","x":127,"y":212,"width":30,"height":8}
+{"kind":"raster","id":"TextEntity","text":"JO","x":165,"y":212,"width":250,"height":8}
+{"kind":"raster","id":"TextEntity","text":"12 M","x":423,"y":212,"width":90,"height":8}

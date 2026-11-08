@@ -1,0 +1,49 @@
+{"kind":"scene","id":"SceneEntity","x":0,"y":0,"width":640,"height":360}
+{"camera":{"type":"perspective","fov":35,"near":0.3,"far":1000,"position":[0,10.5,11469.479],"target":[0,1.784,11569.099],"up":[0,0.996,0.087]}}
+{"light":{"type":"directional","direction":[-0.677,-0.65,-0.345],"color":"#ffffff","intensity":15}}
+{"light":{"type":"ambient","color":"#ffffff","intensity":11}}
+{"background":"#018b85"}
+{"fog":{"start":400,"end":1000,"color":"#018b85"}}
+{"type":"mesh","mesh":"ground","vertices":4,"triangles":2,"shading":"flat","wireframe":false,"transform":{"position":[0,0,11989.479],"scale":[1500,1,1400]},"color":"#882d2d","fill":"#882d2d","strokeWidth":1,"intensity":15,"opacity":1}
+{"type":"line","x1":-750,"y1":0.05,"z1":11289.479,"x2":-750,"y2":0.05,"z2":12689.479,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":-650,"y1":0.05,"z1":11289.479,"x2":-650,"y2":0.05,"z2":12689.479,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":-550,"y1":0.05,"z1":11289.479,"x2":-550,"y2":0.05,"z2":12689.479,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":-450,"y1":0.05,"z1":11289.479,"x2":-450,"y2":0.05,"z2":12689.479,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":-350,"y1":0.05,"z1":11289.479,"x2":-350,"y2":0.05,"z2":12689.479,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":-250,"y1":0.05,"z1":11289.479,"x2":-250,"y2":0.05,"z2":12689.479,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":-150,"y1":0.05,"z1":11289.479,"x2":-150,"y2":0.05,"z2":12689.479,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":-50,"y1":0.05,"z1":11289.479,"x2":-50,"y2":0.05,"z2":12689.479,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":50,"y1":0.05,"z1":11289.479,"x2":50,"y2":0.05,"z2":12689.479,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":150,"y1":0.05,"z1":11289.479,"x2":150,"y2":0.05,"z2":12689.479,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":250,"y1":0.05,"z1":11289.479,"x2":250,"y2":0.05,"z2":12689.479,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":350,"y1":0.05,"z1":11289.479,"x2":350,"y2":0.05,"z2":12689.479,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":450,"y1":0.05,"z1":11289.479,"x2":450,"y2":0.05,"z2":12689.479,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":550,"y1":0.05,"z1":11289.479,"x2":550,"y2":0.05,"z2":12689.479,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":650,"y1":0.05,"z1":11289.479,"x2":650,"y2":0.05,"z2":12689.479,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":750,"y1":0.05,"z1":11289.479,"x2":750,"y2":0.05,"z2":12689.479,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":-750,"y1":0.05,"z1":11289.479,"x2":750,"y2":0.05,"z2":11289.479,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":-750,"y1":0.05,"z1":11389.479,"x2":750,"y2":0.05,"z2":11389.479,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":-750,"y1":0.05,"z1":11489.479,"x2":750,"y2":0.05,"z2":11489.479,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":-750,"y1":0.05,"z1":11589.479,"x2":750,"y2":0.05,"z2":11589.479,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":-750,"y1":0.05,"z1":11689.479,"x2":750,"y2":0.05,"z2":11689.479,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":-750,"y1":0.05,"z1":11789.479,"x2":750,"y2":0.05,"z2":11789.479,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":-750,"y1":0.05,"z1":11889.479,"x2":750,"y2":0.05,"z2":11889.479,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":-750,"y1":0.05,"z1":11989.479,"x2":750,"y2":0.05,"z2":11989.479,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":-750,"y1":0.05,"z1":12089.479,"x2":750,"y2":0.05,"z2":12089.479,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":-750,"y1":0.05,"z1":12189.479,"x2":750,"y2":0.05,"z2":12189.479,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":-750,"y1":0.05,"z1":12289.479,"x2":750,"y2":0.05,"z2":12289.479,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":-750,"y1":0.05,"z1":12389.479,"x2":750,"y2":0.05,"z2":12389.479,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":-750,"y1":0.05,"z1":12489.479,"x2":750,"y2":0.05,"z2":12489.479,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":-750,"y1":0.05,"z1":12589.479,"x2":750,"y2":0.05,"z2":12589.479,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"line","x1":-750,"y1":0.05,"z1":12689.479,"x2":750,"y2":0.05,"z2":12689.479,"color":"#a03a3a","fill":"none","strokeWidth":1,"intensity":8,"opacity":1}
+{"type":"mesh","mesh":"ship:dart","vertices":2396,"triangles":1472,"shading":"none","wireframe":false,"transform":[1,0,0,0,-1.042,0,-0.531,0,0,0,1,0,-4.01,0.15,11499.436,1],"color":"#161d2d","fill":"#161d2d","strokeWidth":1,"intensity":15,"opacity":0.4}
+{"type":"mesh","mesh":"ship:dart","vertices":2396,"triangles":1472,"shading":"flat","wireframe":false,"transform":{"position":[0,5.081,11489.479],"rotation":[0,0,0]},"color":"#29a7ad","fill":"none","strokeWidth":1,"intensity":15,"opacity":1}
+{"kind":"rect","x":8,"y":16,"width":160,"height":8,"color":"#16243d"}
+{"kind":"raster","id":"TextEntity","text":"ENERGY","x":8,"y":8,"width":160,"height":8}
+{"kind":"raster","id":"TextEntity","text":"1148 M","x":220,"y":8,"width":200,"height":12}
+{"kind":"raster","id":"TextEntity","text":"0 COINS","x":512,"y":8,"width":120,"height":12}
+{"kind":"rect","x":160,"y":120,"width":320,"height":120,"color":"#8fb3e6"}
+{"kind":"rect","x":162,"y":122,"width":316,"height":116,"color":"#16243d"}
+{"kind":"raster","id":"TextEntity","text":"GAME OVER","x":162,"y":128,"width":316,"height":12}
+{"kind":"raster","id":"TextEntity","text":"OUT OF ENERGY\nPLAYER: 1148 M\nNEW RECORD!\nCOINS +0 - 0 IN ALL","x":168,"y":150,"width":304,"height":56}
+{"kind":"raster","id":"TextEntity","text":"ENTER - BACK TO MENU","x":162,"y":224,"width":316,"height":8}

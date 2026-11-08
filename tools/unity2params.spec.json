@@ -1,0 +1,32 @@
+{
+ "note": "The parameters of Geometry Race 1.9.7 as serialized in the scene, the prefabs and the project settings of the AssetRipper export (sources/extract/assetripper/1.9.7/ExportedProject) and in the packaged Google Tag Manager container — the numbers decompile_notes.md quotes (chapters 3, 5, 6, 6a, 7, 8, 10, 12, 14, 15, 17, 19). Reference only: the output stays in sources/extract/json/, outside git; data/ holds own content. Each entry names the file, the object path, the script or component and the fields; '*' takes every serialized field that is not Unity's own (m_*).",
+ "project": "../sources/extract/assetripper/1.9.7/ExportedProject",
+ "scene": "Assets/Scene/currentScene.unity",
+ "output": "../sources/extract/json/params.json",
+ "entries": [
+  {"id": "build", "kind": "settings", "file": "ProjectSettings/ProjectSettings.asset", "fields": ["productName", "bundleVersion", "AndroidBundleVersionCode", "defaultScreenOrientation", "defaultScreenWidth", "defaultScreenHeight"], "note": "notes 0"},
+  {"id": "unityVersion", "kind": "text", "file": "ProjectSettings/ProjectVersion.txt", "note": "notes 0"},
+  {"id": "time", "kind": "settings", "file": "ProjectSettings/TimeManager.asset", "fields": ["Fixed Timestep", "Maximum Allowed Timestep", "m_TimeScale"], "note": "notes 3: FixedUpdate 50 Hz"},
+  {"id": "physics", "kind": "settings", "file": "ProjectSettings/DynamicsManager.asset", "fields": ["m_Gravity", "m_DefaultContactOffset"], "note": "notes 11 (the player is kinematic; gravity is unused)"},
+  {"id": "input", "kind": "settings", "file": "ProjectSettings/InputManager.asset", "fields": ["m_Axes"], "only": {"m_Axes": {"m_Name": ["Horizontal", "Vertical", "5th axis", "Jump"]}}, "note": "notes 7: the Horizontal axis of the web build (gravity, sensitivity, dead)"},
+  {"id": "tags", "kind": "settings", "file": "ProjectSettings/TagManager.asset", "fields": ["tags", "layers"], "note": "notes 11: Obstacle / ObstacleCollider / Obstackle tags, PowerUp layer"},
+  {"id": "renderSettings", "kind": "document", "file": "scene", "type": "RenderSettings", "fields": ["m_Fog", "m_FogMode", "m_LinearFogStart", "m_LinearFogEnd", "m_FogColor", "m_AmbientSkyColor", "m_AmbientIntensity"], "note": "notes 5: linear fog 400–1000 u, ambient 0.75"},
+  {"id": "player", "kind": "object", "file": "scene", "object": "Player", "transform": true, "scripts": ["PlayerControl", "PlayerEnergy", "PlayerInput", "PlayerCrash"], "components": ["BoxCollider", "Rigidbody"], "note": "notes 5, 6, 7, 10: position (0, 6, −1.02), scale 0.02, the trigger box 160×25×500 local"},
+  {"id": "magnet", "kind": "object", "file": "scene", "object": "Player/PickupMagnet", "transform": true, "scripts": ["PickupMagnet"], "components": ["SphereCollider"], "note": "notes 5: r 500 local = 10 u, 615 local ahead"},
+  {"id": "camera", "kind": "object", "file": "scene", "object": "Main Camera", "transform": true, "scripts": ["CameraMover", "CameraShake"], "components": ["Camera"], "note": "notes 5, 6a: FOV 35, near 0.3, far 1000, offset (0, 4.5, −10.54)"},
+  {"id": "sound", "kind": "object", "file": "scene", "object": "Main Camera/SoundManager", "scripts": ["SoundManager"], "note": "notes 17: clips, music per world, BPM"},
+  {"id": "levelManager", "kind": "object", "file": "scene", "object": "LevelManager", "scripts": ["LevelManager", "ColorManager"], "decode": {"tilingInEachLevel": "hexInts"}, "note": "notes 8: horizonDist 1000, tiling [4, 4, 3]; notes 15: sky colour lerp speed 2"},
+  {"id": "gameManager", "kind": "object", "file": "scene", "object": "GameManager", "scripts": ["GameManager", "PowerupManager"], "note": "notes 12: powerupDefinitionList (type 0 Battery, 1 Magnet, 2 Coins, 3 Multiplier: amountPerSection, min/max multiplier)"},
+  {"id": "energySlider", "kind": "object", "file": "scene", "object": "Canvas/HUD/Slider", "scripts": ["EnergySlider"], "note": "notes 10: empty 0.25"},
+  {"id": "materials", "kind": "object", "file": "scene", "object": "MaterialManager", "scripts": ["MaterialManager", "PlanePulseOnPickup"], "note": "notes 15: ground materials per world, pulse 0.6 s"},
+  {"id": "powerUpsBank", "kind": "object", "file": "scene", "object": "PowerUpsBank", "scripts": ["PowerUpsBank"], "note": "notes 12: the pickup prefabs"},
+  {"id": "worlds", "kind": "objects", "file": "scene", "objects": ["LevelManager/Levels/Level1_Cubes", "LevelManager/Levels/Level2_Hills", "LevelManager/Levels/Level3_Spheres"], "scripts": ["LevelInfo"], "note": "notes 15: worldID, skyboxColor, prefabsUsedInLevel"},
+  {"id": "worldMenu", "kind": "objects", "file": "scene", "objects": ["Canvas/WorldMenu/WorldHolder/scrollContent/FirstWorld", "Canvas/WorldMenu/WorldHolder/scrollContent/SecondWorld", "Canvas/WorldMenu/WorldHolder/scrollContent/ThirdWorld"], "scripts": ["WorldItemInteraction"], "note": "notes 15: distanceToWin 0/3000/5000; priceCoins in the scene is overridden by GTM WorldPrice-N"},
+  {"id": "shipStore", "kind": "object", "file": "scene", "object": "Canvas/ShipStoreMenu/ShipStore", "scripts": ["ShipStoreBuildier"], "note": "notes 14: the order of the ship definitions"},
+  {"id": "ships", "kind": "prefabs", "glob": "^Ship-\\d+v\\d+-Definition$", "scripts": ["ShipDefinition"], "note": "notes 14: shipEnum, name, ownByDefault, upgradeList {type 0 Battery / 1 Magnet / 2 Coins / 3 Multiplier, min/max level, base price}"},
+  {"id": "shipModels", "kind": "prefabs", "glob": "^Ship-\\d+v\\d+-Model$", "meshes": true, "note": "notes 14: the meshes of the models (vertex counts and extents — the models themselves are not taken)"},
+  {"id": "pickups", "kind": "prefabs", "glob": "^(Energy|Credit1|DoubleCredits_second)$", "scripts": ["PowerupCollectable", "BonusCredits", "EnergyPowerUp", "DoubleCredits", "MoverDistanceBased", "RotateAround", "PulsingBlock"], "components": ["CapsuleCollider"], "note": "notes 12: capsule r 10 h 39.13 along z, energy falls from y 100"},
+  {"id": "upgrades", "kind": "prefabs", "glob": "^UpgradeDefinitionContainer$", "scripts": ["UpgradeDefinitionContainer"], "strip": ["name", "description", "Name", "Description", "comment", "comments", "title", "titles", "icon"], "note": "notes 14: the upgrade definitions without the original's texts"},
+  {"id": "gtm", "kind": "gtm", "file": "Assets/Resources/GTM-5V9352_v20.json", "note": "notes 19: DefaultCollection (prices of ships), WorldPrice-2/3, coinAmmountPerSection, ExperimentWeights"}
+ ]
+}

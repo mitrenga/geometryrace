@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- GRPatch: the Cecil patcher of the original's Assembly-CSharp.dll (GR-M5
+       trace). Mono.Cecil comes from the ilspycmd tool store already on the
+       machine (nastroje.md kap. 5), so no NuGet restore over the network is
+       needed; override with -p:CecilDir=... if it lives elsewhere. -->
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <RootNamespace>GRPatch</RootNamespace>
+    <CecilDir Condition="'$(CecilDir)' == ''">$(HOME)/.dotnet/tools/.store/ilspycmd/9.1.0.7988/ilspycmd/9.1.0.7988/tools/net8.0/any</CecilDir>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Mono.Cecil">
+      <HintPath>$(CecilDir)/Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Rocks">
+      <HintPath>$(CecilDir)/Mono.Cecil.Rocks.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

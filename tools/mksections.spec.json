@@ -1,0 +1,39 @@
+{
+ "note": "The game's own track (data/sections.json), generated here from rules, not copied: the rules are the original's (decompile_notes.md chap. 8, 11, 12 — blocks 500 x 1000 u in rows of three, an entry block 1000 x 1500 u, connectors 500 x 500 u, sections in order with a Length in rows, the last one practically infinite, static blocks before dynamic ones, obstacles switched on one per tick, spawn points at y 6 with a few marked for energy), the layouts are new and come from the seeded randomness below. Coordinates are relative to the block's centre (x across, z along), y is the bottom of an obstacle. Obstacle kinds: box, wall (a flat box), pillar (a cylinder), sphere, gate (two posts and a lintel); animations: tumble (a box rolling over an edge, degrees per second), fall (a pillar toppling when the ship is zOffset away), rise (a column coming up out of the ground as the ship approaches), slide (a sine along an axis: amplitude, period in seconds, phase as a fraction), spin (degrees per second about y through the obstacle's own centre). The obstacle kinds become collision shapes in app/track.js: box, wall and pillar a box (a pillar is drawn as a cylinder but collides as its box), sphere a sphere of its width, gate two posts and a lintel; rise means the obstacle starts sunk by dy and comes up over the last curve-th of zOffset.",
+ "output": "../assets/worlds",
+ "seed": 20260916,
+ "block": {"width": 500, "length": 1000},
+ "entry": {"width": 1000, "length": 1500},
+ "connector": {"width": 500, "length": 500},
+ "worlds": [
+  {
+   "id": "grid", "prefix": "g",
+   "entry": {"recipe": "entry", "obstacles": 10},
+   "static": [{"recipe": "rows", "rows": 9, "size": [12, 24]}, {"recipe": "rows", "rows": 10, "size": [10, 20]}, {"recipe": "slalom", "rows": 8}, {"recipe": "rows", "rows": 8, "size": [16, 30]}, {"recipe": "grid", "rows": 7}],
+   "dynamic": [{"recipe": "rows", "rows": 8, "size": [12, 22], "tumble": 8}, {"recipe": "rows", "rows": 8, "size": [12, 22], "fall": 4, "tumble": 4}, {"recipe": "slalom", "rows": 8, "slide": 4}, {"recipe": "rows", "rows": 9, "size": [12, 20], "rise": 6}],
+   "spawn": {"points": [8, 14], "energy": [2, 4]},
+   "sequence": ["entry", "dynamic:0", "static", "static", "dynamic:1", "static", "static", "dynamic:2", "static", "dynamic:3", "static", "static", "dynamic:0", "static", "dynamic:1", "static", "static", "dynamic:2", "static", "dynamic:3", "repeat"],
+   "repeat": {"static": 2, "dynamic": 1, "pairs": 6, "final": "dynamic", "finalLength": 1000}
+  },
+  {
+   "id": "dunes", "prefix": "d",
+   "entry": {"recipe": "entry", "obstacles": 12},
+   "connector": {"recipe": "gates", "rows": 2},
+   "static": [{"recipe": "walls", "rows": 8}, {"recipe": "gates", "rows": 6}, {"recipe": "rows", "rows": 9, "size": [14, 26]}, {"recipe": "walls", "rows": 9}, {"recipe": "slalom", "rows": 9}],
+   "dynamic": [{"recipe": "rows", "rows": 8, "size": [14, 24], "rise": 8}, {"recipe": "walls", "rows": 8, "slide": 4}, {"recipe": "gates", "rows": 6, "fall": 4}, {"recipe": "rows", "rows": 9, "size": [12, 22], "tumble": 6, "rise": 3}],
+   "spawn": {"points": [8, 13], "energy": [2, 3]},
+   "sequence": ["entry", "connector", "static", "static", "dynamic:0", "static", "connector", "dynamic:1", "static", "static", "dynamic:2", "connector", "static", "dynamic:3", "static", "static", "dynamic:0", "connector", "dynamic:1", "repeat"],
+   "repeat": {"static": 2, "dynamic": 1, "pairs": 5, "final": "dynamic", "finalLength": 999}
+  },
+  {
+   "id": "orbit", "prefix": "o",
+   "entry": {"recipe": "entry", "obstacles": 10},
+   "connector": {"recipe": "gates", "rows": 2},
+   "static": [{"recipe": "spheres", "rows": 9}, {"recipe": "spheres", "rows": 10}, {"recipe": "rows", "rows": 9, "size": [12, 22]}, {"recipe": "slalom", "rows": 8}, {"recipe": "spheres", "rows": 8}],
+   "dynamic": [{"recipe": "spheres", "rows": 8, "spin": 6, "slide": 4}, {"recipe": "rows", "rows": 8, "size": [12, 20], "fall": 5, "tumble": 3}, {"recipe": "spheres", "rows": 9, "rise": 8}, {"recipe": "slalom", "rows": 8, "slide": 5}],
+   "spawn": {"points": [9, 14], "energy": [2, 4]},
+   "sequence": ["entry", "connector", "static", "static", "dynamic:0", "static", "static", "dynamic:1", "connector", "static", "dynamic:2", "static", "static", "dynamic:3", "connector", "static", "dynamic:0", "repeat"],
+   "repeat": {"static": 2, "dynamic": 1, "pairs": 6, "final": "dynamic", "finalLength": 999}
+  }
+ ]
+}

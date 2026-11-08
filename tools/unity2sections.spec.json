@@ -1,0 +1,14 @@
+{
+ "note": "The track content of Geometry Race 1.9.7 as serialized in the AssetRipper export: the three worlds' section sequences (LevelManager/Levels/Level*: ConstantSection / RandomSection / SectionSequence in hierarchy order, notes 8) and every block prefab they use — its BlockDetails (id, StartLeft, EndRight), ObstacleManager, the colliders of its obstacles in the block's own frame (type, tag, layer, centre, size, rotation), the power-up spawn points and the animators (MovingBlock, FallingPillar, movers, rotations...; notes 11, 12), the parts drawn with every collider (mesh, materials, transform in the block's frame, the object drawn — one renderer, or every one below a compound object) and the first part's materials, and a table of the materials (texture, tint, the texture's top/middle/bottom colours and a 17-sample ramp along v; notes 15). Reference only, for tools/matchtrack.mjs (GR-M6): the output stays in sources/extract/json/, outside git; the game's own sections are data/sections.json (checkdata.mjs sees to it that they are not these).",
+ "project": "../sources/extract/assetripper/1.9.7/ExportedProject",
+ "scene": "Assets/Scene/currentScene.unity",
+ "output": "../sources/extract/json/sections.json",
+ "levels": "LevelManager/Levels",
+ "levelScript": "LevelInfo",
+ "sectionScripts": ["ConstantSection", "RandomSection", "SectionSequence"],
+ "blockScripts": ["BlockDetails", "ObstacleManager", "ObstacleActivator"],
+ "spawnScript": "PowerupSpawnPoint",
+ "nestedScript": "NestedPrefab",
+ "colliders": ["BoxCollider", "SphereCollider", "CapsuleCollider", "MeshCollider"],
+ "animators": ["MovingBlock", "FallingPillar", "Mover", "MoverDistanceBased", "ObstacleMove", "Rotation", "RotationDistanceBased", "RotationDistanceBased2", "RotateAround", "RotateTransform", "RotatingTunnel", "PulsingBlock", "PulsingBlockColors", "ObstacleUtilities", "MeshActivator", "ResetObject", "RandomPos", "RandomScaler", "VibrationDistanceBased", "RobotStompVibrations"]
+}

@@ -1,0 +1,10 @@
+<?php
+
+  // public name of the game (the operator's decision of 2026-09-16; the
+  // project is a study and is not published — ZADANI.md chap. 8, 10)
+  $appPublicName = 'GEOMETRY RACE';
+
+  $dbHostname = 'localhost';
+  $dbName = 'geometryrace';
+  $dbUser = 'your-user-name';
+  $dbPassword = 'your-password';

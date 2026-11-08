@@ -1,0 +1,12 @@
+{
+    "standalone": [
+        "svision/js/platform/scene3D/vec3.js",
+        "svision/js/platform/scene3D/mat4.js",
+        "svision/js/platform/scene3D/quat.js",
+        "svision/js/platform/scene3D/mesh.js",
+        "playfield.js",
+        "track.js",
+        "game.js",
+        "gameWorker.js"
+    ]
+}

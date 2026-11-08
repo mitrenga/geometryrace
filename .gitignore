@@ -1,0 +1,20 @@
+sources/
+build/
+tools/vendor/
+node_modules/
+config/config.php
+__pycache__/
+*.pyc
+*.html
+js
+test*
+tmp*
+CLAUDE.md
+.claude/
+MILNIKY.md
+ZADANI.md
+*.log
+
+# the original's shapes, blocks and music tracks converted from sources/extract
+# (study only, the licence preview) - proprietary, never committed (see README.md)
+assets/

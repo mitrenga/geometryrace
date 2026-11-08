@@ -1,0 +1,20 @@
+{
+ "desktop": {"width": 640, "height": 360},
+ "tick": {"hz": 50, "dt": 0.02},
+ "units": {"perMetre": 10},
+ "rules": {
+  "note": "The numbers of the original's mechanics (decompile_notes.md — the chapter after each group), the values game.js reads from GR-M5 on. Units: world units u (10 u = 1 m), seconds, degrees.",
+  "ship": {"speed": 300, "y": 6, "startZ": -1.02, "collider": {"width": 3.2, "height": 0.5, "length": 10, "centerY": 0.4}, "magnet": {"radius": 10, "ahead": 12.3}, "chapter": "5, 6, 9"},
+  "steer": {"smooth": 6, "smoothPad": 15, "target": 35, "ratioSmooth": 2, "ratioSmoothToZero": 4, "velocityFactor": 4, "boosterThreshold": 34, "startTime": 2.5, "startCurve": [[0, 0.2, 0, 0], [0.54, 0.2, 0, 0], [1, 1, 2, 2]], "chapter": "6"},
+  "tilt": {"angle": 35, "speed": 24, "yaw": 0.2, "pitch": 0.09, "chapter": "6"},
+  "camera": {"offset": [0, 4.5, -10.54], "height": 10.5, "dz": -20, "pitch": 5, "fov": 35, "near": 0.3, "far": 1000, "lerp": 20, "maxRoll": 10, "rollSpeed": 4, "yawSpeed": 2, "lookBack": 1.8, "chapter": "5, 6a"},
+  "input": {"touchTop": 0.75, "padCurve": [[-1, -1, 0, 1.2], [-0.5, -0.4, 1.2, 1.2], [0, 0, 0, 0], [0.5, 0.4, 1.13, 1.19], [1, 1, 1.19, 1.19]], "padDead": 0.01, "accelerometer": 6, "chapter": "7"},
+  "energy": {"drain": 0.03, "safeTime": 6, "low": 0.25, "weak": 0.0625, "sinkTo": 5, "sinkRate": 0.25, "riseRate": 0.6, "chapter": "10"},
+  "track": {"horizon": 1000, "blocksPerRow": 3, "block": {"width": 500, "length": 1000}, "entry": {"width": 1000, "length": 1500}, "recycleRows": 3, "copiesPerPrefab": 6, "obstaclesPerTick": 1, "chapter": "8"},
+  "pickups": {"energyPerBlock": 2, "multiplierPerBlock": 1, "coinsPerBlock": 4.5, "coinValue": 1, "multiplierMax": 6, "multiplierTime": 5, "spawnY": 6, "capsule": {"radius": 10, "height": 39.13, "center": {"coin": [-0.37, 7.07, -9.4], "multiplier": [-0.37, 7.07, -9.42], "energy": [0, 0, -9.4]}}, "energyFall": {"from": 100, "over": 1000, "curve": [[0, 0, 2, 2], [0.8, 1, 0, 0]]}, "chapter": "12"},
+  "score": {"metresPerUnit": 0.1, "chapter": "13"},
+  "upgrades": {"levelsToMax": 20, "priceGrowth": 1.2, "ranges": {"battery": [1, 2], "magnet": [1, 2], "coins": [1, 3], "multiplier": [1, 3]}, "chapter": "14"},
+  "pause": {"countdown": 1.8, "chapter": "2"},
+  "crash": {"deathDelay": 1, "chapter": "2, 10"}
+ }
+}

@@ -1,0 +1,59 @@
+{
+ "note": "The game's own three worlds. What is mechanics is the original's (decompile_notes.md chap. 8, 15: the order, the tiling of the random x offset 4/4/3, the distance to unlock the next world 3000/5000 m or its price 600/1200 coins, linear fog 400–1000 u, `beat` = the tempo and start phase of the world's music, which drives PulsingBlock — the pickups beat with it, notes 17); the names are new. The colours follow the original's look for the licence preview (the operator's decision 2026-09-16, notes 15 the table of colours): the sky = LevelInfo.skyboxColor (the camera background and the fog), the ground = the GroundLvl0N material of the world's blocks (the mean of its grid texture times its tint), the obstacles by kind = the means of the textures the world's obstacle materials use (the fallback of the own track — on the reference track every obstacle wears its own material, assets/worlds/<id>.json `materials`; the original's obstacle textures are vertical gradients and solids, none is a pattern), the pickups = the tints of the pickup prefabs (their meshes are data/pickups.json). Colours are the look of playfield.js: the sky, the ground tile and its grid, the obstacles by kind, the pickups. The music is GR-M9.",
+ "worlds": [
+  {
+   "id": "grid",
+   "index": 0,
+   "name": "GRID",
+   "tiling": 4,
+   "distanceToWin": 0,
+   "price": 0,
+   "beat": {"bpm": 136, "phase": 0.7375},
+   "fog": {"start": 400, "end": 1000},
+   "colors": {
+    "sky": "#018b85",
+    "ground": "#882d2d",
+    "grid": "#a03a3a",
+    "obstacle": {"box": "#0a5754", "pillar": "#934237", "wall": "#848380", "sphere": "#594055", "gate": "#92850f"},
+    "pickup": {"energy": "#0aa9f7", "coin": "#f1ff00", "multiplier": "#ff0064"}
+   },
+   "music": null
+  },
+  {
+   "id": "dunes",
+   "index": 1,
+   "name": "DUNES",
+   "tiling": 4,
+   "distanceToWin": 3000,
+   "price": 600,
+   "beat": {"bpm": 118, "phase": 0.9},
+   "fog": {"start": 400, "end": 1000},
+   "colors": {
+    "sky": "#add7f0",
+    "ground": "#eb8d00",
+    "grid": "#f5a830",
+    "obstacle": {"box": "#934237", "pillar": "#594055", "wall": "#848380", "sphere": "#461f21", "gate": "#521c36"},
+    "pickup": {"energy": "#0aa9f7", "coin": "#f1ff00", "multiplier": "#ff0064"}
+   },
+   "music": null
+  },
+  {
+   "id": "orbit",
+   "index": 2,
+   "name": "ORBIT",
+   "tiling": 3,
+   "distanceToWin": 5000,
+   "price": 1200,
+   "beat": {"bpm": 114, "phase": 0.7},
+   "fog": {"start": 400, "end": 1000},
+   "colors": {
+    "sky": "#5a54ff",
+    "ground": "#dcd2b8",
+    "grid": "#eae2cc",
+    "obstacle": {"box": "#955c08", "pillar": "#28286c", "wall": "#95870f", "sphere": "#6b331e", "gate": "#521c36"},
+    "pickup": {"energy": "#0aa9f7", "coin": "#f1ff00", "multiplier": "#ff0064"}
+   },
+   "music": null
+  }
+ ]
+}

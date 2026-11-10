@@ -75,7 +75,6 @@ export class GameApp extends AbstractApp {
     this.fonts = {
       zxFonts8x8Mono: new ZXFonts8x8(this, false),
       zxFonts8x8: new ZXFonts8x8(this, true),
-      zxFonts8x8Keys: new ZXFonts8x8(this, false),
       fonts5x5: new Fonts5x5(this),
       fonts3x3: new Fonts3x3(this)
     };
